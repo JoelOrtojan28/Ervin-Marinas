@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" conten="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website ni pits</title>
+    <link rel="stylesheet" href="ervinmarinas.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+
+        </nav>
+        <div class="header-text">
+            <p>Adamson University student</p>
+            <h1>Hi, I'm <span>Ervin Nino P. Marinas</span><br>From Paranaque</h1>
+        </div>
+    </div>
+</div>
+<!-- ---------about-------- -->
+<div id="about">
+    <div class="contaiiner">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> My name is Ervin Nino Petere Marinas; I go by the nickname Peter; I was brought up 
+                in Paranaque, my parents are Marissa and Nelson Marinas and I have two younger sisters
+                who go by the names of Nel Marie and Maribel Marinas.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Sports</span><br>Volleyball</li>
+                            <li><span>Mobile Games</span><br>Mobile Legends</li>
+                            <li><span>Talent</span><br>Dancing</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-2022</span><br>Volleyball Game</li>
+                            <li><span>2018-1019</span><br>Mobile Legends League</li>
+                            <li><span>2020-2021</span><br>Dancing</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2015-2018</span><br>San Nicolas Academy</li>
+                            <li><span>2021-2022</span><br>Saint Christopher Academy</li>
+                            <li><span>2022-2023</span><br>Adamson University</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------services--------------- -->
+<div id="porfolio">
+    <div class="container">
+        <h1 class="sub-title">My Gallery</h1>
+        <div class="work-list">
+        <div class="work">
+           
+            <img src="gallery8.png">
+        </div>
+        <div class="work">
+            <img src="collage.png">
+        </div>
+       
+        </div>
+        
+    </div>
+</div>
+</body>
+<!-- ----------contact----------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>gmail: ervinmarinas28@gmail.com</p>
+                <p>phone number: 09566403857</p>
+                <p>facebook: Ervin Nino Marinas</p>
+                <div class="social-icons">
+                </div>
+            </div>
+            <div class="contact-right"></div>
+        </div>
+    </div>
+</div>
+
+   
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+
+</body>
+</html>
